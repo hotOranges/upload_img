@@ -36,7 +36,7 @@ class Upload
             move_uploaded_file($this->tmp_name, $destination);
             if ($error == 0) {
                 $img = urlencode('/files/' . $this->name);
-                $imgUrl = "http://localhost/upload/" . $img;
+                $imgUrl = "localhost/upload_img/upload/" . $img;
             }
             return $imgUrl;
         }
